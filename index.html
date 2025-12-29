@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baraka Isaac – Designer</title>
+
+    <meta name="description" content="Baraka Isaac is a graphic designer specializing in brand identity and visual systems for emerging businesses.">
+
+    <link rel="icon" type="image/png" href="Assets/logos/c.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img id="logoImage" src="Assets/logos/a.png" alt="Baraka Isaac logo">
+    </div>
+
+    <nav>
+        <button onclick="showSection('myWork')">My Work</button>
+        <button onclick="showSection('aboutMe')">About Me</button>
+        <button onclick="showSection('contact')">Contact</button>
+    </nav>
+
+    <button id="toggleMode" onclick="toggleMode()">Dark Mode</button>
+</header>
+
+<main>
+<!-- WORK -->
+<section id="myWork" class="content-section">
+    <h2>Selected Work</h2>
+
+    <div class="work-grid">
+        <a href="projects/project-1.html" class="project-card">
+            <img src="Assets/thumbnails/project1.jpg" alt="Kiswe Chicken Farm brand identity">
+            <span>Brand Identity – Kiswe</span>
+        </a>
+
+        <a href="projects/project-2.html" class="project-card">
+            <img src="Assets/thumbnails/project2.jpg" alt="Just Use It poster design">
+            <span>Poster Design – Just Use It</span>
+        </a>
+
+        <a href="projects/project-3.html" class="project-card">
+            <img src="Assets/thumbnails/project3.jpg" alt="Nomad Nova social media system">
+            <span>Social Media System – Nomad Nova</span>
+        </a>
+
+        <a href="projects/project-4.html" class="project-card">
+            <img src="Assets/thumbnails/project4.jpg" alt="Naturally_U packaging redesign">
+            <span>Packaging Redesign – Naturally_U</span>
+        </a>
+
+        <a href="projects/project-5.html" class="project-card">
+            <img src="Assets/thumbnails/project5.jpg" alt="Naturally_U poster redesign">
+            <span>Poster Redesign – Naturally_U</span>
+        </a>
+
+        <a href="projects/project-6.html" class="project-card">
+            <img src="Assets/thumbnails/project6.jpg" alt="Majestic Maria brand identity">
+            <span>Brand Identity – Majestic Maria</span>
+        </a>
+
+        <a href="projects/project-7.html" class="project-card">
+            <img src="Assets/thumbnails/project7.jpg" alt="Good Joseph brand identity">
+            <span>Brand Identity – Good Joseph</span>
+        </a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="aboutMe" class="content-section hidden">
+    <h2>About Me</h2>
+
+    <div class="about-wrapper">
+        <img src="Assets/c.jpeg" alt="Portrait of Baraka Isaac" class="about-photo">
+
+        <div>
+            <p>
+                I’m Baraka Isaac, a graphic designer specializing in brand identity and visual systems
+                for emerging businesses. I help brands look confident, consistent, and ready to grow.
+            </p>
+
+            <p>
+                My approach blends strategy with clean execution — every design choice is intentional
+                and rooted in solving a real business problem.
+            </p>
+            
+
+            <p class="cta">
+                Available for freelance brand and design projects.
+            </p>
+
+            <p class="cv">
+                <a href="Assets/mockups/Baraka Bwire's Info Resume copy.pdf" target="_blank">View or Download my resume</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="content-section hidden">
+    <h2>Contact</h2>
+
+    <form id="contactForm" action="https://formspree.io/f/mdannevw" method="POST">
+        <input type="text" name="company" tabindex="-1" autocomplete="off" class="hidden">
+
+        <label>Name</label>
+        <input type="text" name="name" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Message</label>
+        <textarea name="message" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="formStatus" class="form-status hidden">
+        Message sent successfully. I’ll get back to you shortly.
+    </p>
+</section>
+</main>
+
+<footer>
+  <p>
+    <a href="https://www.behance.net/barakabwire" target="_blank">Behance</a> |
+    <a href="https://www.instagram.com/baraka_bwire_oj/" target="_blank">Instagram</a>
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
