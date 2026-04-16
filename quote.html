@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Quote | Baraka Designs</title>
+    <meta name="description" content="Select the design service you need, see an indicative Kenya market range, and request a meeting with Baraka Isaac.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="config.js"></script>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img id="logoImage" src="Assets/logos/a.png" alt="Baraka Designs logo" loading="eager" decoding="async">
+    </div>
+    <nav>
+        <button onclick="location.href='index.html'">Home</button>
+        <button onclick="location.href='portfolio.html'">Portfolio</button>
+        <button onclick="location.href='blog/index.html'">Blog</button>
+    </nav>
+    <button id="toggleMode" onclick="toggleMode()">Dark Mode</button>
+</header>
+
+<main class="project-page">
+    <p class="eyebrow">Lead Form</p>
+    <h1>Get a Quote</h1>
+    <p class="page-intro">Select the service you need, review an indicative market range, then request a meeting. I’ll receive your request by email and follow up directly.</p>
+
+    <section class="page-panel">
+        <h2>Select Services</h2>
+        <div class="service-grid">
+            <label class="service-option" data-service='{"label":"Logo and Brand Design","min":15000,"max":60000}'>
+                <input type="checkbox" name="services" value="logo-brand">
+                <strong>Logo and Brand Design</strong>
+                <span>KSh 15,000 - 60,000</span>
+                <small>Logos, brand identity, and core visual direction.</small>
+            </label>
+            <label class="service-option" data-service='{"label":"Poster Design","min":3000,"max":12000}'>
+                <input type="checkbox" name="services" value="poster-design">
+                <strong>Poster Design</strong>
+                <span>KSh 3,000 - 12,000</span>
+                <small>Campaign posters, flyers, and awareness graphics.</small>
+            </label>
+            <label class="service-option" data-service='{"label":"Branding Services","min":25000,"max":120000}'>
+                <input type="checkbox" name="services" value="branding-services">
+                <strong>Branding Services</strong>
+                <span>KSh 25,000 - 120,000</span>
+                <small>Identity systems, brand rollout, and collateral.
+                </small>
+            </label>
+            <label class="service-option" data-service='{"label":"Social Media Post Design","min":1500,"max":5000}'>
+                <input type="checkbox" name="services" value="social-posts">
+                <strong>Social Media Post Design</strong>
+                <span>KSh 1,500 - 5,000</span>
+                <small>Per post. Bundle pricing can be discussed.</small>
+            </label>
+            <label class="service-option" data-service='{"label":"Social Media Management","min":25000,"max":90000}'>
+                <input type="checkbox" name="services" value="social-management">
+                <strong>Social Media Management</strong>
+                <span>KSh 25,000 - 90,000</span>
+                <small>Monthly content planning, posting, and optimization.</small>
+            </label>
+            <label class="service-option" data-service='{"label":"Print Design","min":3000,"max":15000}'>
+                <input type="checkbox" name="services" value="print-design">
+                <strong>Print Design</strong>
+                <span>KSh 3,000 - 15,000</span>
+                <small>Business cards, brochures, menus, and similar print assets.</small>
+            </label>
+        </div>
+    </section>
+
+    <section class="page-panel">
+        <h2>Estimated Range</h2>
+        <div id="quoteSummary" class="quote-summary" aria-live="polite"></div>
+        <p><strong>Estimated total:</strong> <span id="quoteTotal">KSh 0</span></p>
+        <p id="quoteTotalNote" class="about-note">Select a service to see pricing.</p>
+    </section>
+
+    <section class="page-panel">
+        <h2>Request a Meeting</h2>
+        <p>Fill this in and I’ll get an email notification with your selected services.</p>
+
+        <form id="quoteForm" action="https://formspree.io/f/mdannevw" method="POST">
+            <input type="hidden" name="_subject" value="New quote request from Baraka Designs">
+            <input type="hidden" name="_next" value="https://barakadesigns.co.ke/quote-thanks.html">
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="hidden">
+            <input type="hidden" id="serviceSummary" name="selected_services">
+            <input type="hidden" id="budgetRange" name="budget_range">
+
+            <label>Name</label>
+            <input type="text" name="name" required>
+
+            <label>Email</label>
+            <input type="email" name="email" required>
+
+            <label>Business / Project</label>
+            <input type="text" name="business" required>
+
+            <label>Phone</label>
+            <input type="tel" name="phone" placeholder="Optional">
+
+            <label>Brief</label>
+            <textarea name="message" placeholder="Tell me what you need, your timeline, and any references." required></textarea>
+
+            <button type="submit">Set Up a Meeting</button>
+        </form>
+
+        <p id="formStatus" class="form-status hidden">Please try again or use the direct contact options.</p>
+    </section>
+
+    <section class="page-panel">
+        <h2>Direct Contact</h2>
+        <p>If you prefer to reach me directly, use the private contact links below. They are protected in the page source to reduce spam scraping.</p>
+        <p><strong>Email:</strong> <a data-email-user="bbaraka.business" data-email-domain="gmail.com" href="#"></a></p>
+        <p><strong>Phone:</strong> <a data-phone-parts="+254|701488869" href="#"></a></p>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-grid">
+        <div>
+            <h3>Baraka Designs</h3>
+            <p>Graphic Designer in Kenya | Logo Design Kenya | Branding Services Nairobi & Mombasa</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
