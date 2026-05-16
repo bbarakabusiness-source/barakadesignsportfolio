@@ -211,6 +211,18 @@ nav button:hover,
     font-weight: 700;
 }
 
+.project-page a:not(.button):not(.read-more),
+.content-section a:not(.button):not(.read-more) {
+    color: var(--yellow);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.project-page a:not(.button):not(.read-more):hover,
+.content-section a:not(.button):not(.read-more):hover {
+    opacity: 0.8;
+}
+
 .portfolio-grid,
 .blog-grid,
 .page-grid {
