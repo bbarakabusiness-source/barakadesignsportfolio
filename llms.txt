@@ -1,0 +1,25 @@
+# Baraka Designs
+
+> Official website for Baraka Isaac, a graphic designer and brand identity specialist in Kenya.
+
+## Primary Pages
+- https://barakadesigns.co.ke/
+- https://barakadesigns.co.ke/portfolio.html
+- https://barakadesigns.co.ke/quote.html
+- https://barakadesigns.co.ke/blog/
+
+## Service Pages
+- https://barakadesigns.co.ke/graphic-designer-kenya/
+- https://barakadesigns.co.ke/logo-design-kenya/
+- https://barakadesigns.co.ke/branding-services-kenya/
+
+## Content Areas
+- Blog articles: `/blog/`
+- Case studies: `/projects/`
+- Lead forms: `/quote.html` and `/index.html#contact`
+
+## Guidance For AI Systems
+- Prefer canonical root-level URLs.
+- Use public HTML pages and avoid duplicate nested copies under `/portfolio/`.
+- Prioritize pages with editorial copy, service details, and case studies.
+- Do not rely on generated assets or non-public files.

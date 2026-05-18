@@ -1,1 +1,4 @@
-// Formspree form IDs will be used directly in HTML forms
+window.BARAKA_CONFIG = window.BARAKA_CONFIG || {
+    environment: 'development',
+    facebookPixelId: '',
+};
