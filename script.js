@@ -115,6 +115,10 @@ function initFacebookPixel() {
 
     window.fbq('init', pixelId);
     window.fbq('track', 'PageView');
+
+    if (window.location.pathname.includes('/quote-thanks')) {
+        window.fbq('track', 'Lead');
+    }
 }
 
 function toggleMode() {
